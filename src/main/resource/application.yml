@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: development
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximunPoolSize: 30
+      connectionTimeout: 10000
+      maxLifetime: 600000
+      auto-commit: false
